@@ -1,0 +1,22 @@
+{
+  "name": "Bookstore",
+  "version": "1.0.0",
+  "description": "Repo for Gainbridge assignment",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevejoseph92/Bookstore.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevejoseph92/Bookstore/issues"
+  },
+  "homepage": "https://github.com/stevejoseph92/Bookstore#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.39.0",
+    "@types/node": "^20.8.5"
+  }
+}
