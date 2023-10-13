@@ -8,4 +8,10 @@ Tests validate response code and response body content. Tests may use JSON files
 
 ## Load Testing
 
-For load testing we can use tools such as JMeter or k6.io. Scripts should test key scenarios such as the workflow described in the playwright tests. Endpoints should also be tested individually. This should cover realistic user behavior. The GET endpoints are most likely to be used more heavily and should be emphasized. Tests should use realistic mock data and be randomized to ensure variability in requests.
+For load testing we can use tools such as JMeter or k6.io. 
+
+Scripts should test scenarios such as the workflows described in the playwright tests. Endpoints should also be tested individually. Although we should know what common traffic patters are to load test properly, the GET endpoints are likely to be used heavily and should be emphasized with stress and spike testing. Average load tests should give us a baseline and smoke tests should validate test script errors before executing larger tests. More critical/common workflows should have spike testing.
+
+Tests should use realistic mock data and be randomized to ensure variability in requests.
+
+Depending on the environment tests are being run against, we should adjust frequency and type of tests. Staging environments should be as close to production as possible and be updated with the latest changes, making it suitable for assessing performance changes like performance trends, regressions, or improvements. It may be appropriate to run frequent smoke tests in production for synthetic testing. 
